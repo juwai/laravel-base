@@ -1,0 +1,19 @@
+{
+    "name": "juwai/laravel-base",
+    "description": "Laravel 5 package for common features",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juwai.com",
+            "email": "dev@juwai.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Juwai\\LaravelBase\\": "src/"
+        }
+    }
+}
