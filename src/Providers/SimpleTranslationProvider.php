@@ -36,7 +36,7 @@ class SimpleTranslationProvider extends TranslationServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/translation.php' => config_path('juwai.translation'),
+            __DIR__ . '/../config/translation.php' => config_path('translation.php'),
         ]);
     }
 }
