@@ -37,6 +37,6 @@ class SimpleTranslationProvider extends TranslationServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/translation.php' => config_path('translation.php'),
-        ]);
+        ], 'config');
     }
 }

@@ -12,7 +12,7 @@ class SimpleTranslator extends Translator
             return parent::get($key, $replace, $locale);
         }
 
-        $defaultPrefix = config('juwai.translation.default_prefix');
+        $defaultPrefix = config('translation.default_prefix');
 
         return parent::get("$defaultPrefix.$key", $replace, $locale);
     }
