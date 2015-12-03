@@ -27,4 +27,16 @@ class SimpleTranslationProvider extends TranslationServiceProvider
             return $trans;
         });
     }
+
+    /**
+     * Perform post-registration booting of services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        $this->publishes([
+            __DIR__ . '/../config/translation.php' => config_path('juwai.translation'),
+        ]);
+    }
 }
