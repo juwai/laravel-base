@@ -14,11 +14,11 @@ class SimpleTranslator extends Translator
     public function get($key, array $replace = array(), $locale = null, $fallback = true)
     {
         if (Str::contains($key, '.')) {
-            return parent::get($key, $replace, $locale);
+            return parent::get($key, $replace, $locale, $fallback);
         }
 
         $defaultPrefix = config('translation.default_prefix');
 
-        return parent::get("$defaultPrefix.$key", $replace, $locale);
+        return parent::get("$defaultPrefix.$key", $replace, $locale, $fallback);
     }
 }
