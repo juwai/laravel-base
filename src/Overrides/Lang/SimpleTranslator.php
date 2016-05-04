@@ -11,7 +11,7 @@ use Illuminate\Support\Str;
  */
 class SimpleTranslator extends Translator
 {
-    public function get($key, array $replace = array(), $locale = null)
+    public function get($key, array $replace = array(), $locale = null, $fallback = true)
     {
         if (Str::contains($key, '.')) {
             return parent::get($key, $replace, $locale);
